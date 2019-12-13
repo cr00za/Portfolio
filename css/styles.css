@@ -1,0 +1,29 @@
+
+
+
+
+
+
+/* Sizing and positioning nav links */
+nav li {
+    display: inline-block;
+    padding: 8px;
+}
+/* removing default underline from anchor tags + styling */
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+/* setup logo for positioning */
+nav img {
+    display: inline-block;
+    width: 75%;
+    height: auto;
+}
+/* Positioning header items */
+nav {
+    display: flex;
+    /* put logo and nav buttons at far ends */
+    justify-content: space-between;
+}
+
