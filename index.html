@@ -6,25 +6,45 @@
         <title>Miguel's Portfolio Website</title>
         <meta name="description" content="">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles-body.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
         <header>
+            <div class="safezone">IPHONE X SAFE ZONE</div>
             <nav>
-                <a href="#" id="logo"><img src="images/Logo.png" alt="logo"></a>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">My Process</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                <div class="navlinks">
+                    <a href="#"><img src="images/Logo.png" alt="logo" id="logo"></a>
+                    <a href="#"><img src="images/hamburger Menu.png" alt="menu" id="hamburger"></a>
+                    <!-- Hidden nav on mobile -->
+                    <ul class="tabletMenu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">My Process</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
-
+        
         <main>
-            Boilerplate Setup
+            <div class="hero">
+                <div id="heroflex1" class="heroIllustration">
+                    <img src="images/heroIllustration.png" alt="puzzle pieces coming together">
+                </div>
+                <div id="heroflex2" class="heroText">
+                    <h1>Miguel Ruddock</h1>
+                    <h2>User Experience / Interface Designer</h2>
+                    <p>My goal is to create opportunities through human-centric desogm and bring life to concepts, ideas, and dreams to positively impact the world.</p>
+                <p>Text try</p>
+                </div>
+                <div id="heroflex3" class="animatelogo">
+                    <img src="images/animatelogo.png" alt="placeholder for logo animation">
+                </div>
+            </div>
         </main>
         
         <footer>

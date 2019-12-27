@@ -1,0 +1,112 @@
+
+/* CSSS RESET */
+h1, h2 {
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+/* Styles for Hero Section */
+
+.hero {
+    background-color: #023246;
+    /* fixing random thin line between blocks */
+    margin-top: -1px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.heroIllustration img {
+  max-width: 340px;
+}
+.heroText {
+    /* use margin to align text with image */
+    margin-right: 16px; 
+    margin-top: 40px;
+
+}
+.heroText h1 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #F6F6F6;
+    letter-spacing: 0.08em;
+}
+.heroText h2 {
+    font-size: 18px;
+    font-weight: 100;
+    color: #F6F6F6;
+}
+.heroText p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #F6F6F6;
+}
+
+.animatelogo {
+    display: flex;
+    align-items: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+    .heroIllustration {
+        display: inline-block;
+        max-width: 50%;
+        padding: 8px;
+        order: 1;
+    }
+    .heroText {
+        display: inline-block;
+        width: 47%;
+        order: initial;
+    }
+    .animatelogo {
+        display: inline-block;
+        order: 2;
+        max-width: 300px;
+        /* center hero animation */
+        margin: 0 auto;
+    }
+    .hero {
+        background-color: #023246;
+        /* fixing random thin line between blocks */
+        margin-top: -1px;
+        padding-left: 16px;
+        padding-right: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    @media screen and (min-width: 900px) {
+        .heroIllustration {
+            display: inline-block;
+            max-width: 50%;
+            /* center element inside it's div */
+            margin: 0 auto;
+            order: 1;
+        }
+        .heroText {
+            display: inline-block;
+            width: 47%;
+            /* Set heroText as first block of info */
+            order: initial;
+        }
+        .animatelogo {
+            display: inline-block;
+            order: 2;
+            /* max-width: 300px; */
+            /* center hero animation */
+            margin: 0 auto;
+        }
+        .hero {
+            background-color: #023246;
+            /* fixing random thin line between blocks */
+            margin-top: -1px;
+            padding-left: 16px;
+            padding-right: 20px;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+}
