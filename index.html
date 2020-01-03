@@ -5,50 +5,283 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Miguel's Portfolio Website</title>
         <meta name="description" content="">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/styles-body.css">
+
+
+        <!-- Font styles -->
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700&display=swap" rel="stylesheet">
+       <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <!-- Custom -->
+        <link rel="stylesheet" href="css/nav-styles.css">
+        <link rel="stylesheet" href="css/custom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     </head>
 
     <body>
         <header>
-            <div class="safezone">IPHONE X SAFE ZONE</div>
-            <nav>
-                <div class="navlinks">
-                    <a href="#"><img src="images/Logo.png" alt="logo" id="logo"></a>
-                    <a href="#"><img src="images/hamburger Menu.png" alt="menu" id="hamburger"></a>
-                    <!-- Hidden nav on mobile -->
-                    <ul class="tabletMenu">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">My Process</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">Contact</a></li>
-                    </ul>
+            <!-- <div class="safezone">IPHONE X SAFE ZONE</div> -->
+
+
+              <nav class="navbar navbar-expand-md navbar-custom fixed-top navbar-light" id="nav">
+                <a class="navbar-brand" href="#"><img id="logo" src="/images/Logo-dark.svg" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse w-100 justify-content-end stroke" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link js-anchor-link" href="#myProcess">My Process</a>
+                    <a class="nav-item nav-link js-anchor-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-item nav-link js-anchor-link" href="#aboutMe">About me</a>
+                    <a class="nav-item nav-link js-anchor-link" href="#contactMe">Contact</a>
+                  </div>
                 </div>
-            </nav>
+              </nav>
         </header>
-        
+    
         <main>
-            <div class="hero">
-                <div id="heroflex1" class="heroIllustration">
-                    <img src="images/heroIllustration.png" alt="puzzle pieces coming together">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 heroBlock" style="width: 80%;" 
+                    rel="popover"
+                    data-title="Thanks for visiting!" 
+                    data-content="I love challenges and exploring strategic ways to solve problems.">
+                        <div>
+                        <h2 id="heroTitle" class="display-4">Miguel Ruddock</h2>
+                        <h3 id="heroSubtitle" class="lead">User Experience / Interface Designer</h3>
+                        <p id="heroText">I create opportunities through human-centric design and bring life to concepts, ideas, and dreams to positively impact the world.</p>
+                        </div>
+                    </div>
+                    <!-- setting up columns for larger devices / center button only on md or > devices -->
+                    <div class="col-sm-12 col-md-6 col-lg-6 text-md-center">
+                        <img  style="width: 90%" src="images/heroNoShadow.png" alt="puzzle pieces coming together">
+                        <a class="btn btn-primary btn-sm" href="#" role="button">Contact me</a>
+                    </div>
                 </div>
-                <div id="heroflex2" class="heroText">
-                    <h1>Miguel Ruddock</h1>
-                    <h2>User Experience / Interface Designer</h2>
-                    <p>My goal is to create opportunities through human-centric desogm and bring life to concepts, ideas, and dreams to positively impact the world.</p>
-                <p>Text try Ok OK let's go</p>
+
+            </div>
+
+            <!-- MY PROCESS - SECTION -->
+            <h2 class="sectionTitle" id="MyProcess">My Process</h2>
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="processLeft col-sm-6 mx-auto">
+                        <div class="row mx-auto">
+                            <!-- Phase 1: Discover -->
+                            <div id="discover" class="phase col-xs-12 col-sm-6 mx-auto">
+                                <img class="phaseImage" src="images/discoverIcon2.svg" alt="icon representing the Discovery phase">
+                                <h4 class="phaseTitle">Discover</h4>
+                                <div id="discoverText" class="phaseText">
+                                    <p>Identify and explore the problem space with objectivity, empathy, and a sense of adventure.</p>
+                                </div>
+                                <div  id="line1" class="line"></div>
+                            </div>
+                            <!-- Phase 2: Define -->
+                            <div id="define" class="phase col-xs-12 col-sm-6 mx-auto">
+                                <img class="phaseImage" src="images/defineIcon2.svg" alt="placeholder pic for Discover phase">
+                                <h4 class="phaseTitle">Define</h4>
+                                <div id="defineText" class="phaseText">
+                                    <p>Narrow in on the design constraints/ guiderails. Idendify what we're solving and for whom.</p>
+                                </div>
+                                <div  id="line2" class="line"></div>
+                            </div>
+                            <!-- Phase 3: Develop -->
+                            <div id="develop" class="phase col-xs-12 col-sm-6 mx-auto">
+                                <img class="phaseImage" src="images/developIcon2.svg" alt="placeholder pic for Discover phase">
+                                <h4 class="phaseTitle">Develop</h4>
+                                <div id="developText" class="phaseText">
+                                    <p>Acquisitively test ideas with clear metrics to garner key insights. Strategically iterate based on analysis.</p>
+                                </div>
+                                <div  id="line3" class="line"></div>
+                            </div> 
+                            <!-- Phase 4: Deliver -->
+                            <div id="deliver" class="phase col-xs-12 col-sm-6 mx-auto">
+                                <img class="phaseImage" src="images/deliverIcon2.svg" alt="placeholder pic for Discover phase">
+                                <h4 class="phaseTitle">Deliver</h4>
+                                <div id="deliverText" class="phaseText">
+                                    <p>Create an awesome solution from our validated methodology - making it testable and improvable.</p>
+                                </div>
+                            </div>
+                                    
+                        </div>
+    
+                    </div>
+
+                    <div class="processRight showcaseText col-xs-12 col-sm-6 my-auto">
+                        <div id="teamworkText">
+                            <h2 class="showcaseQuote">Teamwork makes the dreamwork</h2>
+                            <p>I've had the opportunity to be a part of multiple design teams in my UX/UI program at Georgia Tech while working on projects for external businesses.</p>
+                        </div>
+                    </div>
+
                 </div>
-                <div id="heroflex3" class="animatelogo">
-                    <img src="images/animatelogo.png" alt="placeholder for logo animation">
+
+            </div>
+
+            <!-- PORTFOLIO - SECTION -->
+            <h2 class="sectionTitle" id="portfolio">Portfolio</h2>
+                    <div class="portfolioSubtitleBlock col-xs-12 col-sm-8 col-md-8 col-lg-6">
+                        <div id="bar"></div>
+                        <h3 class="portfolioSubtitleText">View samples of projects I’ve completed
+                                below in my portfolio. They span from 
+                                responsive web to mobile app 
+                                design.</h3>
+                    </div>
+ 
+    
+
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="wrcdvCover" class="cover col-sm-12 col-md-8">
+                        <img src="images/wrcdvCover.jpg" alt="cover for WRCDV project">
+                    </div>
+                    <div id="wrcdvChoice" class="projectChoiceBlock col-sm-12 col-md-4">
+                        <div id="projectChoiceOne" class="projectChoiceTitle">
+                            <h4 class="projectTitle">Women's Resource Center</h4>
+                            <h5 class="projectSubtitle">Non-profit site redesign</h5>
+                        </div>
+                        <a class="btn btn-primary btn-sm" href="//docs.google.com/document/d/1AUaFScqLjCUje3eHTYkEIab6wMw6-uUuTVTxpn6PVos/edit?usp=sharing" role="button">See more</a>
+   
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- setting order for columns with  order-2 order-md-8 -->
+                    <div id="travelCover" class="cover col-sm-12 col-md-8 order-2 order-md-8">
+                        <img src="images/travelAppCover.jpg" alt="cover for travel project">
+                    </div>
+                    <div id="travelChoice" class="projectChoiceBlock col-sm-12 col-md-4 order-2 order-sm-4">
+                        <!-- using float-right to position textBlock to the right-->
+                        <div class="travelChoiceWrapper float-right">
+                            <div id="projectChoiceTwo" class="projectChoiceTitle">
+                                <h4 class="projectTitle">Travel Flow App</h4>
+                                <h5 class="projectSubtitle">Mobile App Design</h5>
+                            </div>
+                            <a class="btn btn-primary btn-sm" href="//docs.google.com/presentation/d/1qT-N6msyJT0qMtQHgEsXVUe_Nx0uMtI3SYdojnPvLYw/edit?usp=sharing" role="button">See more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="goodEatsCover" class="cover col-sm-12 col-md-8">
+                        <img src="images/goodEatsCover.jpg" alt="cover for Good Eats project">
+                    </div>
+                    <div id="goodEatsChoice" class="projectChoiceBlock col-sm-12 col-md-4">
+                        <div id="projectChoiceThree" class="projectChoiceTitle">
+                            <h4 class="projectTitle">Good Eats App</h4>
+                            <h5 class="projectSubtitle">Medical Mobile App</h5>
+                        </div>
+                        <a class="btn btn-primary btn-sm" href="//docs.google.com/document/d/1UUEhMuEip8s86ba3jUCqPBUZQ3dj95SnNpWfBLyYXPM/edit?usp=sharing" role="button">See more</a>
+                    </div>
                 </div>
             </div>
+
+            <!-- ABOUT ME - SECTION -->
+            <h2 class="sectionTitle" id="aboutMe">About Me</h2>
+            <div class="container-fluid about">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 order-1">
+                        <div id="bio">
+                            <h2 class="aboutSubtitle">Miguel Ruddock</h2>
+                            <img id="bioImage" src="images/Portfolio Portrait.jpg" alt="portfolio portrait">
+                            <div id="mantra" class="abBlocks">
+                                <h2 class="aboutSubtitle">My personal mantra:</h2>
+                                <p class="aboutText">Design conversations and solutions that appeal to the heart of people and keep them engaged in a way that compliments the brand.</p>
+                            </div>
+                        </div>
+     
+                    </div>
+                    <div class="col-sm-12 col-md-4 order-3 order-md-2">
+                        <div id="connect">
+                            <h2 class="showcaseQuote">Continuously Learning & Creating</h2>
+                            <p class="aboutText">Connect with me on social media</p>
+                            <div class="socialBlock">
+    
+                                <a class="socialIcons" href="https://www.linkedin.com/in/miguelruddock/" target="_blank">
+                                    <img src="images/linkedin.svg" alt="linkedin icon"></a>
+    
+                                <a class="socialIcons" href="https://www.pinterest.com/cosmicconcepts" target="_blank">
+                                    <img src="images/pinterest.svg" alt="pinterest icon"></a>
+    
+                                <a class="socialIcons" href="https://www.twitter.com" target="_blank">
+                                    <img src="images/twitter.svg" alt="twitter icon"></a>
+    
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 order-2 order-md-3">
+                        <div>
+                            <div id="whyux" class="abBlocks">
+
+                                <div>
+                                    <img class="aboutIllustration" src="images/thinking.svg" alt="illustration of images swirling around a head">
+                                </div>
+                                <h2 class="aboutSubtitle">Why UX/UI?</h2>
+                                <p class="aboutText">I began my career as a UX/UI designer after several  years as an electrical engineering consultant. UX/UI gave me a way to build on my skills in project management, collaboration, and meticulousness with detail to learn how to design creatively.</p>
+                            </div>
+                            <div id="influence" class="abBlocks">
+                                <div>
+                                    <img class="aboutIllustration" src="images/chisel.svg" alt="illustration of a hammer and chisel to represent influence">
+                                </div>
+                                <h2 class="aboutSubtitle">What has influenced me?</h2>
+                                <p class="aboutText">I’ve lived in and traveled to 15 countries including Japan, Austria, and Australia. But no matter where I go I always make new friends and create space in what began as unfamiliar.  In my spare time I enjoy silversmithing, guitar, Anime, sculpting running marathons, and working with my nonprofit, Heal Georgia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="contact pt-2">
+                <h2 class="sectionTitle" id="contactMe">Contact</h2>
+                <form class="container pb-5">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6">
+                        <label for="contactFormName" class="formLabel">name</label>
+                        <input type="text" class="form-control" placeholder="Name">
+                      </div>
+                      <!-- <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                      </div> -->
+                      <div class="form-group col-sm-12 col-md-6">
+                        <label for="contactFormMessage" class="formLabel">message</label>
+                        <textarea class="form-control" id="contactFormMessage" rows="3" placeholder="Your message"></textarea>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary float-right">Send</button>
+                  </form>
+            </div>
+
+
         </main>
         
-        <footer>
-
+        <footer class="footer">
+            <div class="container">  
+                <div class="row">
+                    <div class="col">
+                        <p>© Miguel Ruddock 2019</p>
+                    </div>
+                </div> 
+            </div>
         </footer>
+
+    
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="/js/interactions.js"></script>
     </body>
 </html>
+
+
+

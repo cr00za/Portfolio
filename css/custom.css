@@ -1,0 +1,218 @@
+
+/* ||||||||- GLOBAL STYLES - |||||||||| */
+.sectionTitle { padding: 2rem 0 1rem 1.25rem; }
+.showcaseQuote {font-weight: 600; font-size: 48px;}
+p { font-family: 'Lato', sans-serif; font-weight: 300;}
+h1 {
+    font-weight: 600;    
+    font-size: 48px;
+ }  
+ h1, h2, h3 {font-family: 'Barlow Condensed', sans-serif;}
+
+/************ HERO ***************************************************************** */
+/* Buttons - overriding the button styles to fit my theme */
+.btn-primary{
+    background-color:#38C1F9 !important;
+    border: none !important;
+    color: #023246 !important;
+}
+.btn {border-radius: 2px !important; }
+.jumbotron {
+    padding-top: 7rem !important;
+    background-color: #FFFFFF;}
+
+/* Text - hero section styling */
+#heroTitle { font-family: 'Lato', sans-serif; }
+#heroSubtitle { 
+    font-weight: 100;
+    color: #38C1F9;
+} 
+
+/************ MY PROCESS ********************************************************** */
+/* illustrations - sizing illustrations so they can tile into a 2x2 for all screens */
+.phase {
+    max-width: 40%;
+}
+
+/* styling text in my process breakdown */
+/* #e9ecef */
+.phaseTitle {font-weight: 500; color: #023246; font-size: 16px;}
+.phaseText {color: #023246; font-size: 14px;}
+
+/* Alignment of of the process section blocks */
+.processLeft {
+    justify-content: center;
+}
+
+/* sizing process illustrations */
+.phaseImage {max-width: 50%;}
+
+/* set background color for Team work Text, right */
+.processRight {
+    background-color: #f6f6f6;
+    /* padding-top: 12%;*/
+    padding: 10%;
+}
+
+/* Shortening teamwork textblock */
+#teamworkText {max-width: 80%;}
+
+/************ PORTFOLIO ********************************************************** */
+/* subtitle - style bar for Portfolio subtitle */
+#bar {
+    display: inline-block;
+    background-color: #023246;
+    width: 8px;
+    height: 4rem;
+    margin-right: 8px;
+}
+
+/* style portfolio subtitle Block and text within in */
+.portfolioSubtitleBlock { margin-bottom: 40px; }
+.portfolioSubtitleText {
+    display: inline-block;
+    font-weight: 300; 
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    width: 90%;
+}
+
+
+
+/* set cover image size */
+.cover img { max-width: 100%;}
+
+/* giving some space between the portfolio entries */
+.cover {
+    padding-bottom: 2rem;
+}
+.projectChoiceBlock {
+    margin-bottom: 4rem;
+}
+
+/* making the covers pop off the page with a drop shadow */
+.cover img {
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 64px 30px -30px rgba(196, 196, 196, 0.8);
+}
+
+/* styling portfolio title & subtitle text */
+.projectTitle {
+    font-weight: 500;
+    font-size: 16px;
+}
+.projectSubtitle {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+
+
+
+/************ ABOUT ME ********************************************************** */
+/* Area - description */
+#bioImage {width: 100%; margin-bottom: 1rem;}
+.aboutSubtitle {
+    font-weight: 400;    
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+.aboutText {font-size: 14px; font-weight: 300;}
+.aboutIllustration {width: 50%;}
+
+/* aligning connnect/showcaseQuote Block with images */
+#connect {margin: 40px auto;}
+
+
+
+/************ CONTACT ********************************************************** */
+/* background - change background to #023246 */
+.contact {
+    background-color: #287094;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact .sectionTitle {color: #F6F6F6;}
+.formLabel {color: #F6F6F6; font-weight: 100; opacity: 0.6;}
+
+/* dimming the background area of the contact form 80% opacity */
+textarea, input {
+    background-color: rgba(246, 246, 246, 0.8) !important;
+}
+
+/************ FOOTER ********************************************************** */
+/* Area - description */
+.footer { 
+    height: 100px;
+    padding-top: 24px;
+}
+
+
+
+
+/* ---------------------------      Animation       ------------------------------ */
+
+/* animate the hero text on hover */
+.heroBlock:hover
+{
+        -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        transform: scale(0.95);
+        box-shadow: 0px 10px 10px 0px rgba(196, 196, 196, 0.4);
+        transition: .5s ease-in-out;
+}
+
+/* ////////////////////////////     Responsive       ///////////////////////////// */
+
+/* setting the block for hero text to show on only on screens larger than small */
+@media screen and (min-width: 768px){
+    .heroBlock {
+        background-color: #287094;
+        margin-left: -24px;
+        color: #F6F6F6;
+        padding: 1.25rem;
+        max-width: 500px;
+        height: 100%;
+        /* max-width: 60rem; */
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 0px 64px 30px -30px rgba(196, 196, 196, 0.8);
+    }
+    .heroText {padding-right: 10%;}
+
+    .portfolioSubtitleText {
+        font-size: 19px;
+    }
+    .cover {
+        padding-bottom: 5rem;
+    }
+    /* styling portfolio title & subtitle text */
+    .projectTitle {
+        font-size: 18px;
+    }
+    .projectSubtitle {
+        font-size: 14px;
+    }
+
+    /* aligning cover text for travel app - staggered */
+    .projectChoiceBlock {margin-top: 10%;}
+
+    /* aligning connnect/showcaseQuote Block with images */
+    #connect {margin-top: 20px;}
+
+    /* END Media Query */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
