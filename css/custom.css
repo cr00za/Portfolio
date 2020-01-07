@@ -1,6 +1,6 @@
 
 /* ||||||||- GLOBAL STYLES - |||||||||| */
-.sectionTitle { padding: 2rem 0 1rem 1.25rem; }
+.sectionTitle { padding: 2rem 0rem 1rem 1.25rem; }
 .showcaseQuote {font-weight: 600; font-size: 48px;}
 p { font-family: 'Lato', sans-serif; font-weight: 300;}
 h1 {
@@ -8,12 +8,15 @@ h1 {
     font-size: 48px;
  }  
  h1, h2, h3 {font-family: 'Barlow Condensed', sans-serif;}
+ 
+
+/************ Navigation ***************************************************************** */
 
 /************ HERO ***************************************************************** */
 /* Buttons - overriding the button styles to fit my theme */
 .btn-primary{
-    background-color:#38C1F9 !important;
-    border: none !important;
+    background-color: #f6f6f6 !important;
+    border-color: #023246 !important;
     color: #023246 !important;
 }
 .btn {border-radius: 2px !important; }
@@ -22,13 +25,21 @@ h1 {
     background-color: #FFFFFF;}
 
 /* Text - hero section styling */
-#heroTitle { font-family: 'Lato', sans-serif; }
+#heroTitle {font-family: 'Lato', sans-serif; font-weight: 500;}
 #heroSubtitle { 
     font-weight: 100;
-    color: #38C1F9;
+    color: #023246;
 } 
 
+.heroBlock {
+    padding: 4% 2%;
+    max-width: 80%;
+    height: 60%;
+}
+
 /************ MY PROCESS ********************************************************** */
+
+
 /* illustrations - sizing illustrations so they can tile into a 2x2 for all screens */
 .phase {
     max-width: 40%;
@@ -42,6 +53,7 @@ h1 {
 /* Alignment of of the process section blocks */
 .processLeft {
     justify-content: center;
+    
 }
 
 /* sizing process illustrations */
@@ -49,7 +61,7 @@ h1 {
 
 /* set background color for Team work Text, right */
 .processRight {
-    background-color: #f6f6f6;
+    background-color: none;
     /* padding-top: 12%;*/
     padding: 10%;
 }
@@ -94,6 +106,7 @@ h1 {
 .cover img {
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 0px 64px 30px -30px rgba(196, 196, 196, 0.8);
+
 }
 
 /* styling portfolio title & subtitle text */
@@ -155,7 +168,7 @@ textarea, input {
 /* ---------------------------      Animation       ------------------------------ */
 
 /* animate the hero text on hover */
-.heroBlock:hover
+.cover img:hover
 {
         -webkit-transform: scale(0.95);
         -ms-transform: scale(0.95);
@@ -166,18 +179,87 @@ textarea, input {
 
 /* ////////////////////////////     Responsive       ///////////////////////////// */
 
+
+/* @media screen and (min-width: 500px){
+    .heroImageBlock {
+        z-index: 1 !important;
+        position: absolute;
+        right: 0;
+        background-color: #F0F0F0;
+        padding-top: 10%;
+        margin-left: -12%;
+        margin-top: -4%;
+        padding-left: 16%;
+        padding-right: 2%;
+        padding-bottom: 15%;
+        justify-content: center;
+        max-width:67%;
+        height: auto;
+    }
+
+    .heroBlock {
+        z-index: 2;
+        background-color: #F6F6F6;
+        margin-left: 0%;
+        color: #023246;
+        padding: 4% 2%;
+        max-width: 60%;
+        height: 60%;
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        /* box-shadow: 0px 64px 30px -30px rgba(196, 196, 196, 0.8);
+    }
+}
+  */
+  #heroImage {width: 100%;}
+  .heroImageBlock {padding-top: 10%;}
+
 /* setting the block for hero text to show on only on screens larger than small */
 @media screen and (min-width: 768px){
+    .jumbotron {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+        background-color: #FFFFFF;}
+    /* styling logoblock - overriding the nav to fit my theme */
+    .logoBlock {
+        display: inline-block;
+        z-index: 0 !important;
+        background-color: #023246 !important;
+        margin-top: -2%;
+        margin-bottom: -1%;
+        margin-left: -1%;
+        padding-left: 1%;
+        padding-bottom: 14%;
+        width: 45%;
+    } 
+    .heroImageBlock {
+        z-index: 1 !important;
+        position: absolute;
+        right: 0;
+        background-color: #F0F0F0;    
+        margin-left: -12%;
+        margin-top: -4%;
+        padding-left: 20%;
+        padding-right: 10%;
+        padding-bottom: 20%;
+        justify-content: center;
+        max-width:67%;
+        height:55%;
+    }
+
     .heroBlock {
-        background-color: #287094;
+        z-index: 2;
+        background-color: #F6F6F6;
         margin-left: -24px;
-        color: #F6F6F6;
-        padding: 1.25rem;
-        max-width: 500px;
-        height: 100%;
-        /* max-width: 60rem; */
+        color: #023246;
+        padding: 4% 2%;
+        max-width: 46%;
+        height: 60%;
         /* offset-x | offset-y | blur-radius | spread-radius | color */
-        box-shadow: 0px 64px 30px -30px rgba(196, 196, 196, 0.8);
+        /* box-shadow: 0px 64px 30px -30px rgba(196, 196, 196, 0.8); */
+            /* top left highlight */
+    /* box-shadow: -6px -6px 26px 0 rgba(255, 255, 255, 0.83); */
+    /* bottom right shadow */
+    /* box-shadow: 6px 6px 16px 0 rgba(196, 196, 196, 0.51); */
     }
     .heroText {padding-right: 10%;}
 

@@ -13,9 +13,10 @@
 }
 
 
-nav a img {width: 50%;}
+#logo {width: 50%;}
 
 @media screen and (min-width: 768px){
+
 
     nav a img {width: 75%;}
     /* stroke effect setup*/

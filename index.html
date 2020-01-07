@@ -26,10 +26,12 @@
 
 
               <nav class="navbar navbar-expand-md navbar-custom fixed-top navbar-light" id="nav">
-                <a class="navbar-brand" href="#"><img id="logo" src="/images/Logo-dark.svg" alt="Logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+                
+                    <a class="navbar-brand" href="#"><img id="logo" src="/images/Logo-light.svg" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
                 <div class="collapse navbar-collapse w-100 justify-content-end stroke" id="navbarNavAltMarkup">
                   <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
@@ -43,30 +45,31 @@
         </header>
     
         <main>
+            <div class="logoBlock"></div>
             <div class="jumbotron">
                 <div class="row">
-                    <div class="col-sm-12 col-md-6 heroBlock" style="width: 80%;" 
-                    rel="popover"
-                    data-title="Thanks for visiting!" 
-                    data-content="I love challenges and exploring strategic ways to solve problems.">
+                    <div class="col-sm-12 col-md-6 heroBlock">
                         <div>
                         <h2 id="heroTitle" class="display-4">Miguel Ruddock</h2>
                         <h3 id="heroSubtitle" class="lead">User Experience / Interface Designer</h3>
                         <p id="heroText">I create opportunities through human-centric design and bring life to concepts, ideas, and dreams to positively impact the world.</p>
+                        
+                        <div class="text-center">
+                            <a class="btn btn-primary btn-sm" href="#" role="button">Contact me</a>
                         </div>
                     </div>
+                    </div>
                     <!-- setting up columns for larger devices / center button only on md or > devices -->
-                    <div class="col-sm-12 col-md-6 col-lg-6 text-md-center">
-                        <img  style="width: 90%" src="images/heroNoShadow.png" alt="puzzle pieces coming together">
-                        <a class="btn btn-primary btn-sm" href="#" role="button">Contact me</a>
+                    <div class="col-sm-12 col-md-6 text-md-center heroImageBlock">
+                        <img  id="heroImage" src="images/Portfolio Portrait.svg" alt="my illustrated portrait">
                     </div>
                 </div>
 
             </div>
 
             <!-- MY PROCESS - SECTION -->
-            <h2 class="sectionTitle" id="MyProcess">My Process</h2>
-            <div class="container-fluid">
+            <h2 class="sectionTitle" id="myProcess">My Process</h2>
+            <div class="container-fluid processBackground">
                 <div class="row">
 
                     <div class="processLeft col-sm-6 mx-auto">
@@ -126,10 +129,8 @@
             <h2 class="sectionTitle" id="portfolio">Portfolio</h2>
                     <div class="portfolioSubtitleBlock col-xs-12 col-sm-8 col-md-8 col-lg-6">
                         <div id="bar"></div>
-                        <h3 class="portfolioSubtitleText">View samples of projects I’ve completed
-                                below in my portfolio. They span from 
-                                responsive web to mobile app 
-                                design.</h3>
+                        <h3 class="portfolioSubtitleText">View samples of individual and group projects I’ve completed
+                                below in my portfolio. They span from responsive web to mobile app design.</h3>
                     </div>
  
     
@@ -137,13 +138,13 @@
 
             <div class="container-fluid">
                 <div class="row">
-                    <div id="wrcdvCover" class="cover col-sm-12 col-md-8">
-                        <img src="images/wrcdvCover.jpg" alt="cover for WRCDV project">
+                    <div id="travelCover" class="cover col-sm-12 col-md-8">
+                        <img src="images/travelAppCover.jpg" alt="cover for travel project">
                     </div>
-                    <div id="wrcdvChoice" class="projectChoiceBlock col-sm-12 col-md-4">
+                    <div id="travelChoice" class="projectChoiceBlock col-sm-12 col-md-4">
                         <div id="projectChoiceOne" class="projectChoiceTitle">
-                            <h4 class="projectTitle">Women's Resource Center</h4>
-                            <h5 class="projectSubtitle">Non-profit site redesign</h5>
+                            <h4 class="projectTitle">Travel Flow App</h4>
+                            <h5 class="projectSubtitle">Mobile App Design</h5>
                         </div>
                         <a class="btn btn-primary btn-sm" href="//docs.google.com/document/d/1AUaFScqLjCUje3eHTYkEIab6wMw6-uUuTVTxpn6PVos/edit?usp=sharing" role="button">See more</a>
    
@@ -152,15 +153,15 @@
 
                 <div class="row">
                     <!-- setting order for columns with  order-2 order-md-8 -->
-                    <div id="travelCover" class="cover col-sm-12 col-md-8 order-2 order-md-8">
-                        <img src="images/travelAppCover.jpg" alt="cover for travel project">
+                    <div id="goodEatsCover" class="cover col-sm-12 col-md-8 order-2 order-md-8">
+                        <img src="images/goodEatsCover.jpg" alt="cover for Good Eats project">
                     </div>
-                    <div id="travelChoice" class="projectChoiceBlock col-sm-12 col-md-4 order-2 order-sm-4">
+                    <div id="goodEatsChoice" class="projectChoiceBlock col-sm-12 col-md-4 order-2 order-sm-4">
                         <!-- using float-right to position textBlock to the right-->
-                        <div class="travelChoiceWrapper float-right">
+                        <div class="float-right">
                             <div id="projectChoiceTwo" class="projectChoiceTitle">
-                                <h4 class="projectTitle">Travel Flow App</h4>
-                                <h5 class="projectSubtitle">Mobile App Design</h5>
+                                <h4 class="projectTitle">Good Eats App</h4>
+                                <h5 class="projectSubtitle">Medical Mobile App</h5>
                             </div>
                             <a class="btn btn-primary btn-sm" href="//docs.google.com/presentation/d/1qT-N6msyJT0qMtQHgEsXVUe_Nx0uMtI3SYdojnPvLYw/edit?usp=sharing" role="button">See more</a>
                         </div>
@@ -168,24 +169,29 @@
                 </div>
 
                 <div class="row">
-                    <div id="goodEatsCover" class="cover col-sm-12 col-md-8">
-                        <img src="images/goodEatsCover.jpg" alt="cover for Good Eats project">
+                    <div id="wrcdvCover" class="cover col-sm-12 col-md-8">
+                        <img src="images/wrcdvCover.jpg" alt="cover for WRCDV project">
                     </div>
-                    <div id="goodEatsChoice" class="projectChoiceBlock col-sm-12 col-md-4">
+                    <div id="wrcdvChoice" class="projectChoiceBlock col-sm-12 col-md-4">
                         <div id="projectChoiceThree" class="projectChoiceTitle">
-                            <h4 class="projectTitle">Good Eats App</h4>
-                            <h5 class="projectSubtitle">Medical Mobile App</h5>
+                            <h4 class="projectTitle">Women's Resource Center</h4>
+                            <h5 class="projectSubtitle">Non-profit site redesign</h5>
                         </div>
                         <a class="btn btn-primary btn-sm" href="//docs.google.com/document/d/1UUEhMuEip8s86ba3jUCqPBUZQ3dj95SnNpWfBLyYXPM/edit?usp=sharing" role="button">See more</a>
                     </div>
                 </div>
             </div>
 
+            <!-- TOOLS - SECTION -->
+            <h2 class="sectionTitle" id="aboutMe">About Me</h2>
+
+
+
             <!-- ABOUT ME - SECTION -->
             <h2 class="sectionTitle" id="aboutMe">About Me</h2>
             <div class="container-fluid about">
                 <div class="row">
-                    <div class="col-sm-12 col-md-4 order-1">
+                    <div class="col-sm-12 col-md-4 order-md-1">
                         <div id="bio">
                             <h2 class="aboutSubtitle">Miguel Ruddock</h2>
                             <img id="bioImage" src="images/Portfolio Portrait.jpg" alt="portfolio portrait">
@@ -234,27 +240,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-
-            <div class="contact pt-2">
-                <h2 class="sectionTitle" id="contactMe">Contact</h2>
-                <form class="container pb-5">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-6">
-                        <label for="contactFormName" class="formLabel">name</label>
-                        <input type="text" class="form-control" placeholder="Name">
-                      </div>
-                      <!-- <div class="col">
-                        <input type="text" class="form-control" placeholder="Last name">
-                      </div> -->
-                      <div class="form-group col-sm-12 col-md-6">
-                        <label for="contactFormMessage" class="formLabel">message</label>
-                        <textarea class="form-control" id="contactFormMessage" rows="3" placeholder="Your message"></textarea>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary float-right">Send</button>
-                  </form>
             </div>
 
 
